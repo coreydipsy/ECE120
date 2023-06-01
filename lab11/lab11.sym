@@ -1,0 +1,11 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	OUTERLOOP         3005
+//	INNERLOOP         3006
+//	INPUT             300F
+//	INITIA            3010
+//	NEGONE            3011
+//	RESULT            3012
+

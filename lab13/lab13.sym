@@ -1,0 +1,17 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	NEW_FULL_LINE     300A
+//	TIMES_16          300C
+//	IS_NEGATIVE       3018
+//	PRINT_0           3019
+//	DECRE_COL         301B
+//	CHECK_NEW         301C
+//	EXIT              301F
+//	PRINT_1           3020
+//	PRINT_NEW_LINE    3023
+//	START_ADDRESS     3032
+//	ASCII_NL          3033
+//	FONT_DATA         3034
+

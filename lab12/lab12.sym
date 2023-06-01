@@ -1,0 +1,15 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	SET_COLUMN        0BC9
+//	IS_NEGATIVE       0BCB
+//	PRINT_0           0BCC
+//	DECRE_COL         0BCE
+//	EXIT              0BD2
+//	PRINT_1           0BD3
+//	PRINT_NEW_LINE    0BD6
+//	START_ADDRESS     0BDC
+//	ASCII_NL          0BDD
+//	FONT_DATA         0BDE
+

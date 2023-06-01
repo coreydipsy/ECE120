@@ -1,0 +1,18 @@
+Question 1: Describe the errors that occur when trying to assemble lab11.asm. Identify the cause of each error.
+
+I went straight into fixing the bug in my code before trying to assemble it, but I think the error will be no .ORIG and no .END. Also I did run into the outerloop has already appeared error, since the command was BRpz instead of BRzp. Other than that I also deleted the extra comma, give .FILL xFFFF a label, change the way of loading R2, a label for .FILL x0000, and initialize R0 and R5 using it.
+
+
+Question 2: For each label in the code, write down the corresponding memory location.
+
+from LC-3 simulator interface
+OUTERLOOP   x3005
+INNERLOOP   x3006
+INPUT       x300F 
+INITIA      x3010
+NEGONE      x3011
+RESULT      x3012
+
+Question 3: Between using labels and explicit memory locations/offsets, which one makes the most sense, and why?
+
+I think using the label makes more sense, since it is not hex numbers, but labels that can be understood by human language. Also, it is easier to reference it, since it is words instead of numbers, so it is more intuitive. 

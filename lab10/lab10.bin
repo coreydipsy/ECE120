@@ -1,0 +1,33 @@
+; This is the file you will use for the lab assignment
+; Make sure to comment your code properly and don't exceed 
+; the line limitation for this assignment.  Good luck!
+;Corey Yu kaiyiyu2
+;this funtion is lab10, used to identify and add the positive numbers
+;the strategy is to identify using BR to know if the number is positive,
+;if the number is positive, add it, add pointer and minus count,
+;if the number is negative, don't add it, but add pointer and minus count,
+;when count is zero, halt
+;R1 used to load memory
+;R2
+;R3 pointer
+;R4 counter
+;R5 final sum
+
+0011 0001 0000 0000 ; x3100 - starting address of the program
+
+; The program description and code starts here
+1110 011 000110001 ; LEA R3 <- PC + #49 (from x3101 to x3132)
+0101 100 100 1 00000 ; AND R4 <- R4 AND #0 (to clear R4)
+0001 100 100 1 01010 ; ADD R4 <- R4 + #10 (set R4 to 10)
+0101 101 101 1 00000 ; AND R5 <- R5 AND #0 (to clear R5)
+0110 001 011 000000 ; LDR R1 <- M[R3 + #0] (load memory to R1)
+0000 110 000000001 ; BRnz PC <- PC + #1 (if the number is 0 or negative, skip the add instruction)
+0001 101 001 0 00 101 ; ADD R5 <- R5 + R1 (add the positive number to R5)
+0001 011 011 1 00001 ; ADD R3 <- R3 + #1 (increase pointer by 1)
+0001 100 100 1 11111 ; ADD R4 <- R4 + #-1 (decrease count by 1)
+0000 001 111111010 ; BRp PC <- PC + #-6 (if the count is still positive, load the next memory)
+1111 0000 00100101 ; TRAP 25 (HALT program)
+
+
+
+
